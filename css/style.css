@@ -1,0 +1,54 @@
+.first, .second, .third, .forth{
+	border:2px solid #000;
+	margin:2px;
+	width:400px;
+	text-align:center;
+}
+img{
+	width:200px;
+	padding:10px;
+}
+.parent{
+	display: flex;
+	flex-direction:row-reverse;
+
+}
+/*media query for mobile view*/
+@media screen and (max-width: 425px){
+	.parent{
+		flex-direction:column;
+	}
+	.first{
+		background-color: red;
+	}
+}
+
+/*tablet media quarie*/
+@media screen and (min-width: 426px) and (max-width: 768px){
+	.parent{
+		flex-direction:row-reverse;
+		justify-content:space-between;
+	}
+	.first{
+		background-color:green;
+		border-radius: 20px;
+		width: 300px;
+	}
+	.second{
+		background-color:blue;
+		border-radius: 20px;
+		width: 300px;
+	}
+	.third{
+		background-color:purple;
+		border-radius: 20px;
+		width: 300px;
+	}
+	.forth{
+		background-color:pink;
+		border-radius: 20px;
+		width: 300px;
+	}
+
+
+}
